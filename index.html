@@ -2,100 +2,102 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alvin Tan - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alvin Tan - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Alvin Tan</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Alvin Tan</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <div class="container">
     <section id="about" class="card">
-        <h2>About</h2>
-        <p>Tan Wei Song Alvin<br>
-            Singapore<br>
-            alvintan95@gmail.com<br>
-            +65 9630 7535<br>
-            alvin-tan-29978913b<br>
-            aattwwss</p>
-        <h3>Education</h3>
-        <p>Bachelor in Computer Science, Nanyang Technological University<br>
-            - Specialized in Cybersecurity and Datascience<br>
-            - Honours (Merit) Second Class (Lower) Honours<br>
-            08/2016 – 05/2020</p>
+      <h2>About</h2>
+      <p>Tan Wei Song Alvin<br>
+        Singapore<br>
+        alvintan95@gmail.com<br>
+        +65 9630 7535<br>
+        alvin-tan-29978913b<br>
+        aattwwss</p>
+      <h3>Education</h3>
+      <p>Bachelor in Computer Science, Nanyang Technological University<br>
+        - Specialized in Cybersecurity and Datascience<br>
+        - Honours (Merit) Second Class (Lower) Honours<br>
+        08/2016 – 05/2020</p>
     </section>
 
     <section id="experience" class="card">
-        <h2>Experience</h2>
-        <ul>
-            <li>
-                <h3>Backend Developer, Atome</h3>
-                <p>Developed microservices in Java Spring Boot</p>
-                <p>Transactional CRUD with MySQL to maintain data integrity</p>
-                <p>Eventual consistency with RabbitMQ to sync data across various microservices</p>
-                <p>Developed microservices with Go and Gin</p>
-                <p>Took advantage of the concurrency model in Golang to improve data composition of multiple APIs by
-                    300%</p>
-                <p>Migrated Spring Boot microservices to Go, reducing CPU and RAM usage by 66% and 50% respectively</p>
-                <p>Integrated 3rd party SSO with OAuth2 and OIDC</p>
-                <p>Took initiative to provide developer tools to improve developer experience</p>
-                <p>Python wrapper to allow easy logging and proxy from multi-cluster and namespace in Kubernetes</p>
-                <p>Golang tool to auto-generate SQL boilerplates</p>
-            </li>
-            <li>
-                <h3>Junior Software Engineer, Taiger Singapore Pte Ltd</h3>
-                <p>Built microservices involving Java Spring Boot</p>
-                <p>Followed design patterns to implement different data ingestion pipelines into Elasticsearch</p>
-                <p>Proficient in Elasticsearch queries</p>
-                <p>Fine-tuned individual field boost to meet clients' expectations</p>
-                <p>Used aggregated buckets of recorded user events to serve a basic recommendation engine</p>
-                <p>Deployment of microservices in both Windows and Unix environment using IIS, Tomcat, and NGINX</p>
-                <p>Conducted, resolved, and justified vulnerability assessment and pen test with clients</p>
-                <p>Installed and managed Elasticsearch and Kafka clusters (3 masters)</p>
-                <p>Maintained 100% high availability</p>
-                <p>Response time to hit 90% of SLA</p>
-            </li>
-        </ul>
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <h3>Backend Developer, Atome</h3>
+          <p>Developed microservices in Java Spring Boot</p>
+          <p>Transactional CRUD with MySQL to maintain data integrity</p>
+          <p>Eventual consistency with RabbitMQ to sync data across various microservices</p>
+          <p>Developed microservices with Go and Gin</p>
+          <p>Took advantage of the concurrency model in Golang to improve data composition of multiple APIs by 300%</p>
+          <p>Migrated Spring Boot microservices to Go, reducing CPU and RAM usage by 66% and 50% respectively</p>
+          <p>Integrated 3rd party SSO with OAuth2 and OIDC</p>
+          <p>Took initiative to provide developer tools to improve developer experience</p>
+          <p>Python wrapper to allow easy logging and proxy from multi-cluster and namespace in Kubernetes</p>
+          <p>Golang tool to auto-generate SQL boilerplates</p>
+        </li>
+        <li>
+          <h3>Junior Software Engineer, Taiger Singapore Pte Ltd</h3>
+          <p>Built microservices involving Java Spring Boot</p>
+          <p>Followed design patterns to implement different data ingestion pipelines into Elasticsearch</p>
+          <p>Proficient in Elasticsearch queries</p>
+          <p>Fine-tuned individual field boost to meet clients' expectations</p>
+          <p>Used aggregated buckets of recorded user events to serve a basic recommendation engine</p>
+          <p>Deployment of microservices in both Windows and Unix environment using IIS, Tomcat, and NGINX</p>
+          <p>Conduct, resolve, and justify vulnerability assessment and pen test with clients</p>
+          <p>Install and manage Elasticsearch and Kafka clusters (3 master)</p>
+          <p>Maintained 100% high availability</p>
+          <p>Response time to hit 90% of SLA</p>
+        </li>
+      </ul>
     </section>
 
     <section id="projects" class="card">
-        <h2>Projects</h2>
-        <p>Expense Tracker, Telegram Bot (https://github.com/aattwwss/telegram-expense-bot)<br>
-            A telegram bot written in Golang and Postgres to track a person's expenses.<br>
-            - Record an expense by using regex to parse the amount and description<br>
-            - Used SQL aggregation for monthly report generation in CSV<br>
-            - Pagination of monthly expenses with inline keyboard<br>
-            - Dockerized and hosted on Oracle cloud</p>
-        <p>Multi-Disciplinary Project<br>
-            An 8-man project to set up a motorized robot to navigate a maze and recognize pictures of shapes along the
-            maze.<br>
-            - Involved in setting up a Raspberry Pi to serve as a communication hub between an Arduino board, Android
-            tablet, and a PC<br>
-            - Used Python back-end and multi-threading to achieve synchronous communication between all 3 devices<br>
-            - Involved in setting up PiCamera to do image recognition on 15 different shapes in the maze<br>
-            - Used OpenCV library to do image processing and PyTorch for image classification with a trained model</p>
+      <h2>Projects</h2>
+      <p>Expense Tracker, Telegram Bot (https://github.com/aattwwss/telegram-expense-bot)<br>
+        A telegram bot written in Golang and Postgres to track a person's expenses.<br>
+        - Record an expense by using regex to parse the amount and description<br>
+        - Used SQL aggregation for monthly report generation in CSV<br>
+        - Pagination of monthly expenses with inline keyboard<br>
+        - Dockerized and hosted on Oracle cloud</p>
+      <p>Multi-Disciplinary Project<br>
+        An 8-man project to set up a motorized robot to navigate a maze and recognize pictures of shapes along the
+        maze.<br>
+        - Involved in setting up a Raspberry Pi to serve as a communication hub between an Arduino board, Android tablet,
+        and a PC<br>
+        - Used Python back-end and multi-threading to achieve synchronous communication between all 3 devices<br>
+        - Involved in setting up PiCamera to do image recognition on 15 different shapes in the maze<br>
+        - Used OpenCV library to do image processing and PyTorch for image classification with a trained model</p>
     </section>
 
     <section id="skills" class="card">
-        <h2>Skills</h2>
-        <p>Python, Django, Java, Spring Boot, SQL, Elasticsearch Integration and queries, Golang</p>
+      <h2>Skills</h2>
+      <p>Python, Django, Java, Spring Boot, SQL, Elasticsearch Integration and queries, Golang</p>
     </section>
+  </div>
 
-    <footer>
-        <p>&copy; 2023 Alvin Tan</p>
-    </footer>
-
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Alvin Tan</p>
+    </div>
+  </footer>
 </body>
 
 </html>
