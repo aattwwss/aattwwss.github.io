@@ -1,16 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Work in Progress Site</title>
+    <title>Alvin Tan - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Work in Progress</h1>
-        
-        <p class="message">We are currently working on something awesome!</p>
-        
-        <p class="updates">Please check back later for updates.</p>
-    </div>
+    <header>
+        <h1>Alvin Tan</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>I am a passionate software developer with a Bachelor's degree in Computer Science, specialized in Cybersecurity and Data Science. I have experience in backend development, microservices, and working with technologies such as Java Spring Boot, Golang, and Elasticsearch.</p>
+        <ul>
+            <li><strong>Name:</strong> Alvin Tan</li>
+            <li><strong>Location:</strong> Singapore</li>
+            <li><strong>Email:</strong> alvintan95@gmail.com</li>
+            <li><strong>Phone:</strong> +65 9630 7535</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <article>
+            <h3>Backend Developer, Atome</h3>
+            <p>August 2021 - Present</p>
+            <ul>
+                <li>Developed microservices in Java Spring Boot</li>
+                <li>Transactional CRUD with MySQL to maintain data integrity</li>
+                <li>Eventual consistency with RabbitMQ to sync data across various microservices</li>
+                <li>Developed microservices with Go and Gin</li>
+                <li>Integrated 3rd party SSO with OAUTH2 and OIDC</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Junior Software Engineer, Taiger Singapore Pte Ltd</h3>
+            <p>May 2020 - August 2021</p>
+            <ul>
+                <li>Built microservices involving Java Spring Boot</li>
+                <li>Implemented different data ingestion pipelines into Elasticsearch</li>
+                <li>Proficient in Elasticsearch queries and fine-tuning</li>
+                <li>Used aggregated buckets of recorded user events to serve a basic recommendation engine</li>
+                <li>Deployment of microservices in Windows and Unix environment</li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <article>
+            <h3>Expense Tracker, Telegram Bot</h3>
+            <p>A telegram bot written in Golang and Postgres to track a person's expenses.</p>
+            <ul>
+                <li>Record expenses using regex parsing</li>
+                <li>Generate monthly reports in CSV format using SQL aggregation</li>
+                <li>Pagination of monthly expenses with inline keyboard</li>
+                <li>Dockerized and hosted on Oracle Cloud</li>
+            </ul>
+            <a href="https://github.com/aattwwss/telegram-expense-bot">GitHub Repository</a>
+        </article>
+        <article>
+            <h3>Multi-Disciplinary Project</h3>
+            <p>An 8-man project involving a motorized robot navigating a maze and recognizing pictures of shapes.</p>
+            <ul>
+                <li>Set up Raspberry Pi as a communication hub between Arduino, Android tablet, and PC</li>
+                <li>Implemented synchronous communication using Python backend and multi-threading</li>
+                <li>Utilized PiCamera for image recognition of shapes in the maze</li>
+                <li>Used OpenCV and PyTorch for image processing and classification</li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Django</li>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>SQL</li>
+            <li>Elasticsearch</li>
+            <li>Golang</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Alvin Tan</p>
+    </footer>
 </body>
 </html>
