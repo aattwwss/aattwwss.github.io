@@ -33,6 +33,8 @@ nav ul li a {
     padding: 20px;
     background-color: #fff;
     margin: 10px;
+    height: 300px; /* Adjust the height as needed */
+    overflow-y: auto; /* Add scrollbars if needed */
 }
 
 .card:target {
@@ -52,4 +54,5 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
+    margin-top: 10px; /* Adjust the margin-top as needed */
 }
