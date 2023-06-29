@@ -54,5 +54,6 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
-    margin-top: 10px; /* Adjust the margin-top as needed */
+    margin-top: 50px; /* Adjust the margin-top as needed */
+    margin-bottom: 10px; /* Adjust the margin-bottom as needed */
 }
