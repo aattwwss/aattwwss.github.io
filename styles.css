@@ -20,6 +20,13 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     display: none;
+    overflow-y: auto;
+    max-height: 400px;
+  }
+  
+  .skills {
+    max-height: none;
+    overflow-y: visible;
   }
   
   .skills ul {
@@ -76,6 +83,10 @@ body {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
   
   footer p {
