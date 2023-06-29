@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alvin Tan - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <h1>Alvin Tan</h1>
@@ -19,92 +23,81 @@
 
     <section id="about" class="card">
         <h2>About</h2>
-        <div>
-            <p>I am a passionate software developer with a Bachelor's degree in Computer Science, specialized in Cybersecurity and Data Science. I have experience in backend development, microservices, and working with technologies such as Java Spring Boot, Golang, and Elasticsearch.</p>
-            <ul>
-                <li><strong>Name:</strong> Alvin Tan</li>
-                <li><strong>Location:</strong> Singapore</li>
-                <li><strong>Email:</strong> alvintan95@gmail.com</li>
-                <li><strong>Phone:</strong> +65 9630 7535</li>
-            </ul>
-        </div>
+        <p>Tan Wei Song Alvin<br>
+            Singapore<br>
+            alvintan95@gmail.com<br>
+            +65 9630 7535<br>
+            alvin-tan-29978913b<br>
+            aattwwss</p>
+        <h3>Education</h3>
+        <p>Bachelor in Computer Science, Nanyang Technological University<br>
+            - Specialized in Cybersecurity and Datascience<br>
+            - Honours (Merit) Second Class (Lower) Honours<br>
+            08/2016 – 05/2020</p>
     </section>
 
-    <section id="experience" class="card">
+    <section id="experience">
         <h2>Experience</h2>
-        <div>
-            <article>
-                <h3>Backend Developer, Atome</h3>
-                <p>August 2021 - Present</p>
-                <ul>
-                    <li>Developed microservices in Java Spring Boot</li>
-                    <li>Transactional CRUD with MySQL to maintain data integrity</li>
-                    <li>Eventual consistency with RabbitMQ to sync data across various microservices</li>
-                    <li>Developed microservices with Go and Gin</li>
-                    <li>Integrated 3rd party SSO with OAUTH2 and OIDC</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Junior Software Engineer, Taiger Singapore Pte Ltd</h3>
-                <p>May 2020 - August 2021</p>
-                <ul>
-                    <li>Built microservices involving Java Spring Boot</li>
-                    <li>Implemented different data ingestion pipelines into Elasticsearch</li>
-                    <li>Proficient in Elasticsearch queries and fine-tuning</li>
-                    <li>Used aggregated buckets of recorded user events to serve a basic recommendation engine</li>
-                    <li>Deployment of microservices in Windows and Unix environment</li>
-                </ul>
-            </article>
-        </div>
+
+        <article class="card">
+            <h3>Backend Developer, Atome</h3>
+            <ul>
+                <li>Developed microservices in Java Spring Boot</li>
+                <li>Transactional CRUD with MySQL to maintain data integrity</li>
+                <li>Eventual consistency with RabbitMQ to sync data across various microservices</li>
+                <li>Developed microservices with Go and Gin</li>
+                <li>Took advantage of the concurrency model in Golang to improve data composition of multiple APIs by 300%</li>
+                <li>Migrated Spring Boot microservices to Go, reducing CPU and RAM usage by 66% and 50% respectively</li>
+                <li>Integrated 3rd party SSO with OAuth2 and OIDC</li>
+                <li>Took initiative to provide developer tools to improve developer experience</li>
+                <li>Python wrapper to allow easy logging and proxy from multi-cluster and namespace in Kubernetes</li>
+                <li>Golang tool to auto-generate SQL boilerplates</li>
+            </ul>
+        </article>
+
+        <article class="card">
+            <h3>Junior Software Engineer, Taiger Singapore Pte Ltd</h3>
+            <ul>
+                <li>Built microservices involving Java Spring Boot</li>
+                <li>Followed design patterns to implement different data ingestion pipelines into Elasticsearch</li>
+                <li>Proficient in Elasticsearch queries</li>
+                <li>Fine-tuned individual field boost to meet clients' expectations</li>
+                <li>Used aggregated buckets of recorded user events to serve a basic recommendation engine</li>
+                <li>Deployment of microservices in both Windows and Unix environment using IIS, Tomcat, and NGINX</li>
+                <li>Conducted, resolved, and justified vulnerability assessment and pen test with clients</li>
+                <li>Installed and managed Elasticsearch and Kafka clusters (3 masters)</li>
+                <li>Maintained 100% high availability</li>
+                <li>Response time to hit 90% of SLA</li>
+            </ul>
+        </article>
+
     </section>
 
     <section id="projects" class="card">
         <h2>Projects</h2>
-        <div>
-            <article>
-                <h3>Expense Tracker, Telegram Bot</h3>
-                <p>
-                    A telegram bot written in Golang and Postgres to track a person's expenses.
-                    <br>
-                    <a href="https://github.com/aattwwss/telegram-expense-bot">View on GitHub</a>
-                </p>
-                <ul>
-                    <li>Record an expense by using regex to parse the amount and description</li>
-                    <li>Used SQL aggregation for monthly report generation in CSV</li>
-                    <li>Pagination of monthly expenses with inline keyboard</li>
-                    <li>Dockerized and hosted on Oracle Cloud</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Multi-Disciplinary Project</h3>
-                <p>An 8-man project to set up a motorized robot to navigate a maze and recognize pictures of shapes along the maze.</p>
-                <ul>
-                    <li>Set up Raspberry Pi as a communication hub between Arduino, Android tablet, and PC</li>
-                    <li>Used Python backend and multi-threading for synchronous communication</li>
-                    <li>Involved in setting up PiCamera for image recognition of shapes in the maze</li>
-                    <li>Used OpenCV library for image processing and PyTorch for image classification</li>
-                </ul>
-            </article>
-        </div>
+        <p>Expense Tracker, Telegram Bot (https://github.com/aattwwss/telegram-expense-bot)<br>
+            A telegram bot written in Golang and Postgres to track a person's expenses.<br>
+            - Record an expense by using regex to parse the amount and description<br>
+            - Used SQL aggregation for monthly report generation in CSV<br>
+            - Pagination of monthly expenses with inline keyboard<br>
+            - Dockerized and hosted on Oracle cloud</p>
+        <p>Multi-Disciplinary Project<br>
+            An 8-man project to set up a motorized robot to navigate a maze and recognize pictures of shapes along the maze.<br>
+            - Involved in setting up a Raspberry Pi to serve as a communication hub between an Arduino board, Android tablet, and a PC<br>
+            - Used Python back-end and multi-threading to achieve synchronous communication between all 3 devices<br>
+            - Involved in setting up PiCamera to do image recognition on 15 different shapes in the maze<br>
+            - Used OpenCV library to do image processing and PyTorch for image classification with a trained model</p>
     </section>
 
     <section id="skills" class="card">
         <h2>Skills</h2>
-        <div>
-            <ul>
-                <li>Python</li>
-                <li>Django</li>
-                <li>Java</li>
-                <li>Spring Boot</li>
-                <li>SQL</li>
-                <li>Elasticsearch</li>
-                <li>Golang</li>
-            </ul>
-        </div>
+        <p>Python, Django, Java, Spring Boot, SQL, Elasticsearch Integration and queries, Golang</p>
     </section>
 
     <footer>
         <p>&copy; 2023 Alvin Tan</p>
     </footer>
+
 </body>
+
 </html>
