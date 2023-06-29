@@ -48,4 +48,24 @@ nav ul li a {
 .accordion-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-toggle:checked + .accordion-header + .accordion-content {
+    max-height: 1000px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
