@@ -28,39 +28,23 @@ nav ul li a {
     text-decoration: none;
 }
 
-.accordion-toggle {
+.card {
     display: none;
+    padding: 20px;
+    background-color: #fff;
+    margin: 10px;
 }
 
-.accordion-header {
-    cursor: pointer;
-    background-color: #ddd;
-    color: #333;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+.card:target {
+    display: block;
 }
 
-.accordion-header:hover {
-    background-color: #ccc;
+.card:target h2 {
+    margin-top: 0;
 }
 
-.accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-.accordion-toggle:checked + .accordion-header + .accordion-content {
-    max-height: 1000px;
-}
-
-section h2 {
-    margin-bottom: 10px;
-}
-
-ul {
-    padding-left: 20px;
+.card:target div {
+    margin-top: 10px;
 }
 
 footer {
